@@ -15,15 +15,20 @@ const Navbar = () => {
   return (
     <nav className="bg-[#2f7d32] text-white px-4 md:px-8 py-4 shadow">
       <div className="flex items-center justify-between">
-        <h1 className="font-bold text-lg">🎂 Birthday Tracker</h1>
-
+        {/* <h1 className=" cursor-pointer">🎂 Birthday Tracker</h1> */}
+        <NavLink to="/dashboard" className="font-bold text-lghover:underline">
+            Syntax Tracker
+          </NavLink>
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
-          <NavLink to="/today" className="hover:underline">
-            Today
+          <NavLink to="/dashboard" className="hover:underline">
+            Dashboard
           </NavLink>
-          <NavLink to="/upcoming" className="hover:underline">
-            Upcoming
+          <NavLink to="/events" className="hover:underline">
+            Events
+          </NavLink>
+          <NavLink to="/birthdays" className="hover:underline">
+            Birthdays
           </NavLink>
           <NavLink to="/calendar" className="hover:underline">
             Calendar
@@ -49,11 +54,14 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden mt-4 flex flex-col gap-4">
-          <NavLink to="/today" onClick={() => setOpen(false)}>
-            Today
+          <NavLink to="/dashboard" onClick={() => setOpen(false)}>
+            Home
           </NavLink>
-          <NavLink to="/upcoming" onClick={() => setOpen(false)}>
-            Upcoming
+          <NavLink to="/events" onClick={() => setOpen(false)}>
+            Events
+          </NavLink>
+          <NavLink to="/birthdays" onClick={() => setOpen(false)}>
+            Birthdays
           </NavLink>
           <NavLink to="/calendar" onClick={() => setOpen(false)}>
             Calendar

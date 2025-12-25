@@ -18,7 +18,7 @@ const Login = () => {
     }
 
     login(email);
-    navigate("/today");
+    navigate("/events");
   };
 
   return (
