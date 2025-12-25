@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/Navbar";
 import Birthdays from "./pages/Birthdays";
 import Dashboard from "./pages/Dashboard";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -55,6 +56,7 @@ const App = () => {
           }
         />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

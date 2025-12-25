@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* <h1 className=" cursor-pointer">🎂 Birthday Tracker</h1> */}
         <NavLink to="/dashboard" className="font-bold text-lghover:underline">
-            Syntax Tracker
+            Syntax 
           </NavLink>
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
