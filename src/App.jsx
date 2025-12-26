@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Events from "./pages/Events";
 import Calendar from "./pages/Calendar";
+import Gallery from "./pages/Gallery";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/Navbar";
 import Birthdays from "./pages/Birthdays";
@@ -42,6 +43,16 @@ const App = () => {
             <ProtectedRoute>
               <Navbar />
               <Birthdays />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/gallery"
+          element={
+            <ProtectedRoute>
+              <Navbar />
+              <Gallery />
             </ProtectedRoute>
           }
         />

@@ -28,6 +28,34 @@ const events = [
     phone: "8100589346",
     email: "team@syntax.com",
   },
+    {
+    name: "Syntax Meeting",
+    purpose: "Discuss project updates",
+    datetime: "2025-11-01 10:00",
+    audience: "Team Leads",
+    agenda: "Timeline Updates",
+    phone: "8100589346",
+    email: "team@syntax.com",
+
+  },
+  {
+    name: "Syntax Meeting",
+    purpose: "Discuss project updates",
+    datetime: "2025-11-01 10:00",
+    audience: "Team Leads",
+    agenda: "Timeline Updates",
+    phone: "8100589346",
+    email: "team@syntax.com",
+  },
+  {
+    name: "Syntax Meeting",
+    purpose: "Discuss project updates",
+    datetime: "2025-11-01 10:00",
+    audience: "Team Leads",
+    agenda: "Timeline Updates",
+    phone: "8100589346",
+    email: "team@syntax.com",
+  },
 ];
 
 const Events = () => {

@@ -9,8 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#166534" }} className="mt-16">
-      <div className="max-w-7xl mx-auto px-6 py-10 text-white">
+    <footer style={{ backgroundColor: "#2f7d32" }} className="mt-16">
+      <div className="mx-auto px-6 py-10 shadow text-white">
 
         {/* Top Section */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold mb-3">Navigation</h3>
+            <h3 className="font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/dashboard" className="hover:underline">
@@ -41,6 +41,11 @@ const Footer = () => {
               <li>
                 <Link to="/birthdays" className="hover:underline">
                   Birthdays
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="hover:underline">
+                  Gallery
                 </Link>
               </li>
             </ul>

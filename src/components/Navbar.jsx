@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     logout();
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -21,14 +21,15 @@ const Navbar = () => {
           </NavLink>
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
-          <NavLink to="/dashboard" className="hover:underline">
-            Dashboard
-          </NavLink>
+        
           <NavLink to="/events" className="hover:underline">
             Events
           </NavLink>
           <NavLink to="/birthdays" className="hover:underline">
             Birthdays
+          </NavLink>
+          <NavLink to="/gallery" className="hover:underline">
+            Gallery
           </NavLink>
           <NavLink to="/calendar" className="hover:underline">
             Calendar
@@ -38,7 +39,9 @@ const Navbar = () => {
             onClick={handleLogout}
             className="bg-white text-[#2f7d32] px-4 py-1.5 rounded-lg font-medium"
           >
+            <NavLink to="/" className="hover:underline">
             Logout
+          </NavLink>
           </button>
         </div>
 
